@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Judgment Interest Calculator</title>
+<meta name="description" content="Support and help for the Judgment Interest Calculator iOS app: how to calculate pre- and post-judgment interest, partial payments, state packs, and contact.">
+<style>
+  :root{
+    --navy:#0f2740; --navy2:#17395c; --ink:#1c2733; --muted:#5b6b7d;
+    --line:#e2e8f1; --bg:#f4f7fb; --card:#ffffff; --accent:#1f6feb;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:0 22px 80px}
+  header{
+    background:linear-gradient(135deg,var(--navy2),var(--navy));
+    color:#fff; padding:52px 22px 46px; text-align:center;
+  }
+  header .inner{max-width:760px;margin:0 auto}
+  header h1{margin:0 0 8px; font-size:30px; letter-spacing:-.4px}
+  header p{margin:0; color:#c8d5e6; font-size:15.5px; line-height:1.5}
+  .badge{
+    display:inline-block; margin-bottom:18px; padding:6px 14px; border-radius:999px;
+    background:rgba(255,255,255,.12); color:#dce6f3; font-size:13px; font-weight:600;
+    letter-spacing:.3px; border:1px solid rgba(255,255,255,.18);
+  }
+  main{margin-top:-24px}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:28px 30px 10px; box-shadow:0 12px 34px rgba(15,39,64,.08); margin-bottom:20px;
+  }
+  h2{font-size:20px; color:var(--navy); margin:4px 0 14px; letter-spacing:-.2px}
+  h3{font-size:16px; color:var(--navy2); margin:20px 0 6px}
+  p{margin:0 0 15px}
+  ol{margin:0 0 12px; padding-left:20px}
+  ol li{margin:0 0 9px}
+  .steps{counter-reset:s; list-style:none; padding:0; margin:0 0 6px}
+  .steps li{
+    position:relative; padding:0 0 16px 44px; margin:0;
+  }
+  .steps li::before{
+    counter-increment:s; content:counter(s);
+    position:absolute; left:0; top:-2px; width:30px; height:30px; border-radius:50%;
+    background:var(--navy); color:#fff; font-weight:700; font-size:15px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .steps li strong{color:var(--navy)}
+  .faq{border-top:1px solid var(--line); padding-top:16px; margin-top:4px}
+  .faq:first-of-type{border-top:0; padding-top:0}
+  .q{font-weight:700; color:var(--navy); margin:0 0 6px}
+  .muted{color:var(--muted); font-size:14px}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .contact{
+    background:linear-gradient(135deg,#12314f,#0c2036); color:#fff; text-align:center;
+    border-radius:16px; padding:30px; margin-bottom:20px;
+  }
+  .contact h2{color:#fff; margin-top:0}
+  .contact a{
+    display:inline-block; margin-top:6px; background:#fff; color:var(--navy);
+    font-weight:700; padding:12px 24px; border-radius:10px; font-size:16px;
+  }
+  .contact a:hover{text-decoration:none; opacity:.94}
+  .contact p{color:#c8d5e6}
+  footer{max-width:760px; margin:6px auto 0; padding:0 22px; text-align:center}
+  footer p{color:var(--muted); font-size:13.5px; margin:6px 0}
+</style>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="badge">JUDGMENT INTEREST CALCULATOR</div>
+      <h1>Support &amp; Help</h1>
+      <p>Calculate pre- and post-judgment interest for any U.S. jurisdiction — right on your iPhone.</p>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main>
+      <div class="card">
+        <h2>What the app does</h2>
+        <p>
+          Judgment Interest Calculator computes statutory and contractual interest on a money
+          judgment or claim. Enter a rate, a principal, and your dates, and it returns the accrued
+          interest, the per-diem, and the running total. Turn on a <strong>state pack</strong> and the
+          app fills in that state's statutory rates for you; for post-judgment interest it also tracks
+          rate changes over time — splitting the timeline at each statutory reset — and handles partial
+          payments two different ways.
+        </p>
+        <p class="muted">
+          The app works entirely offline. There is no account to create, and no data ever leaves your
+          device.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Pre-Judgment tab</h2>
+        <ol class="steps">
+          <li><strong>Pick your jurisdiction.</strong> Leave it on <em>General</em> to type any annual
+            rate yourself, or choose <em>Nevada</em> to auto-fill the statutory rate under
+            NRS&nbsp;17.130, 99.040, or 108.237.</li>
+          <li><strong>Enter the principal</strong> — the amount interest runs on.</li>
+          <li><strong>Set the time period.</strong> Choose a start date; the end date defaults to
+            today, and a <em>Today</em> button and plain-English duration make the range easy to set.</li>
+          <li><strong>Read the result.</strong> You get the interest, the daily per-diem, and the
+            total of principal plus interest.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>Post-Judgment tab</h2>
+        <ol class="steps">
+          <li><strong>Enter the judgment amount and the date it was entered.</strong> The "through"
+            date defaults to today.</li>
+          <li><strong>Choose the rate.</strong> In General mode you enter one rate. With the Nevada
+            pack on, the app applies the statutory post-judgment rate and automatically adjusts it at
+            each January&nbsp;1 and July&nbsp;1 change, so a multi-year judgment is calculated correctly
+            across every rate period.</li>
+          <li><strong>Add partial payments (optional).</strong> Tap to add a payment with its date and
+            amount. Choose <em>principal-first</em> or the <em>U.S.&nbsp;Rule</em> (interest-first) and
+            the app keeps a running balance.</li>
+          <li><strong>Review the schedule.</strong> The app shows each period, its rate, the interest
+            accrued, any payment applied, and the remaining balance.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq">
+          <p class="q">Which states are supported?</p>
+          <p>Every state — in General mode you enter the rate that applies to your matter. The
+            <strong>Nevada</strong> pack is the first to auto-fill statutory rates and track post-judgment
+            rate changes for you. Additional state packs are planned.</p>
+        </div>
+
+        <div class="faq">
+          <p class="q">Where do the Nevada rates come from?</p>
+          <p>The Nevada pack uses the prime rate set by the Nevada Commissioner of Financial
+            Institutions (which resets each January&nbsp;1 and July&nbsp;1) plus the statutory margin for
+            the selected statute. You should always verify the current rate against the official source
+            for your matter.</p>
+        </div>
+
+        <div class="faq">
+          <p class="q">What's the difference between "principal-first" and the "U.S. Rule"?</p>
+          <p>They are two ways to apply a partial payment. <em>Principal-first</em> reduces the
+            outstanding principal before interest; the <em>U.S.&nbsp;Rule</em> applies the payment to
+            accrued interest first and then to principal. Courts and jurisdictions differ, so the app
+            lets you choose.</p>
+        </div>
+
+        <div class="faq">
+          <p class="q">Does the app store or send my data?</p>
+          <p>No. It has no account, no analytics, and no network connection. Everything you enter stays
+            on your device. See the <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+
+        <div class="faq">
+          <p class="q">Is this legal advice?</p>
+          <p>No. Using this app does not create an attorney-client relationship in any way and does not
+            constitute legal advice. Consult the applicable state and local laws regarding pre- and
+            post-judgment interest rates, and verify all figures independently.</p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2>Still need help?</h2>
+        <p>Email us and we'll get back to you.</p>
+        <a href="mailto:dstarbuck@dhwlawlv.com?subject=Judgment%20Interest%20Calculator%20support">dstarbuck@dhwlawlv.com</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>Judgment Interest Calculator &middot; Drew J. Starbuck</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
