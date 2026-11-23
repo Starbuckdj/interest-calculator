@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "version": "2026-11-23",
+  "federalWeeks": [
+    {"weekEnding": "2026-09-04", "rate": 4.15, "judgmentStart": "2026-09-07", "judgmentEnd": "2026-09-13"},
+    {"weekEnding": "2026-09-11", "rate": 4.24, "judgmentStart": "2026-09-14", "judgmentEnd": "2026-09-20"},
+    {"weekEnding": "2026-09-18", "rate": 4.41, "judgmentStart": "2026-09-21", "judgmentEnd": "2026-09-27"},
+    {"weekEnding": "2026-09-25", "rate": 4.48, "judgmentStart": "2026-09-28", "judgmentEnd": "2026-10-04"},
+    {"weekEnding": "2026-10-02", "rate": 4.52, "judgmentStart": "2026-10-05", "judgmentEnd": "2026-10-11"},
+    {"weekEnding": "2026-10-09", "rate": 4.45, "judgmentStart": "2026-10-12", "judgmentEnd": "2026-10-18"},
+    {"weekEnding": "2026-10-16", "rate": 4.49, "judgmentStart": "2026-10-19", "judgmentEnd": "2026-10-25"},
+    {"weekEnding": "2026-10-23", "rate": 4.48, "judgmentStart": "2026-10-26", "judgmentEnd": "2026-11-01"},
+    {"weekEnding": "2026-10-30", "rate": 4.44, "judgmentStart": "2026-11-02", "judgmentEnd": "2026-11-08"},
+    {"weekEnding": "2026-11-06", "rate": 4.36, "judgmentStart": "2026-11-09", "judgmentEnd": "2026-11-15"},
+    {"weekEnding": "2026-11-13", "rate": 4.56, "judgmentStart": "2026-11-16", "judgmentEnd": "2026-11-22"},
+    {"weekEnding": "2026-11-20", "rate": 4.59, "judgmentStart": "2026-11-23", "judgmentEnd": "2026-11-29"}
+  ],
+  "states": {
+    "texas": {
+      "post": [
+        {"start": "2026-11-01", "end": "2026-11-30", "rate": 7.00, "source": "https://occc.texas.gov/wp-content/uploads/2026/10/10-21-2026.pdf"},
+        {"start": "2026-12-01", "end": "2026-12-31", "rate": 7.00, "source": "https://occc.texas.gov/wp-content/uploads/2026/11/11-18-2026.pdf"}
+      ]
+    },
+    "tennessee": {
+      "post": [
+        {"start": "2026-07-01", "end": "2026-12-31", "rate": 8.75, "source": "https://www.tncourts.gov/tennessee-judgment-interest-rates"}
+      ]
+    },
+    "newJersey": {
+      "years": [
+        {"year": 2026, "atOrBelow": 4.5, "above": 6.5},
+        {"year": 2027, "atOrBelow": 4.0, "above": 6.0}
+      ]
+    },
+    "iowa": {
+      "post": [
+        {"end": "2026-11-08", "rate": 6.47, "source": "https://www.iowacourts.gov/iowa-courts/district-court/post-judgment-interest-table"},
+        {"start": "2026-11-09", "rate": 6.28, "source": "https://www.iowacourts.gov/iowa-courts/district-court/post-judgment-interest-table"}
+      ]
+    },
+    "washington": {
+      "post": [
+        {"start": "2026-11-01", "end": "2026-11-30", "general": 12, "tortPrivate": 9, "tortPublic": 6.314, "source": "https://lawfilesext.leg.wa.gov/Law/CRO/WSRhtm/rates.htm"}
+      ]
+    }
+  }
+}
